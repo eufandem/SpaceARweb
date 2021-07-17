@@ -5,6 +5,12 @@ import fantasyPoster from "./assets/Posters/fantasy.jpg";
 import jasminePoster from "./assets/Posters/jasmine.jpg";
 import acrylicBluePoster from "./assets/Posters/Acrylic.jpg";
 import melodyPoster from "./assets/Posters/melody.jpg";
+import flowPoster from "./assets/Posters/Stripes.jpg";
+import evapPoster from "./assets/Posters/evaporate.jpg";
+import acrosstwoPoster from "./assets/Posters/across.jpg";
+
+
+
 
 //Models
 
@@ -12,6 +18,14 @@ import acrylicBlue from "./assets/Paintings/acrylicBlue.gltf";
 import fantasy from "./assets/Paintings/fantasy.gltf";
 import jasmine from "./assets/Paintings/jasmine.gltf";
 import melody from "./assets/Paintings/melody.gltf";
+import flow from "./assets/Paintings/flow.gltf";
+import evap from "./assets/Paintings/evaporate.gltf";
+import acrosstwo from "./assets/Paintings/acrosstwo.gltf";
+import across from "./assets/Paintings/across.gltf";
+
+
+
+
 
 const augmented = [
   {
@@ -62,8 +76,8 @@ const augmented = [
   },
   {
     id: 4,
-    glb: acrylicBlue,
-    poster: jasminePoster,
+    glb: across,
+    poster: acrosstwoPoster,
     tag: "Poster",
     
     price: {
@@ -73,8 +87,8 @@ const augmented = [
   },
   {
     id: 5,
-    glb: acrylicBlue,
-    poster: Poster,
+    glb: acrosstwo,
+    poster: acrosstwoPoster,
     tag: "Poster",
     
     price: {
@@ -84,8 +98,8 @@ const augmented = [
   },
   {
     id: 6,
-    glb: acrylicBlue,
-    poster: Poster,
+    glb: evap,
+    poster: evapPoster,
     tag: "Poster",
     price: {
       formatted_with_symbol: "",
@@ -94,8 +108,8 @@ const augmented = [
   },
   {
     id: 7,
-    glb: acrylicBlue,
-    poster: Poster,
+    glb: flow,
+    poster: flowPoster,
     tag: "Poster",
     price: {
       formatted_with_symbol: "",
