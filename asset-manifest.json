@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/NaderNasr/SpaceARweb/static/css/main.cf2121c8.chunk.css",
+    "main.js": "/NaderNasr/SpaceARweb/static/js/main.a2fe426c.chunk.js",
+    "main.js.map": "/NaderNasr/SpaceARweb/static/js/main.a2fe426c.chunk.js.map",
+    "runtime-main.js": "/NaderNasr/SpaceARweb/static/js/runtime-main.02b51c36.js",
+    "runtime-main.js.map": "/NaderNasr/SpaceARweb/static/js/runtime-main.02b51c36.js.map",
+    "static/js/2.2525a523.chunk.js": "/NaderNasr/SpaceARweb/static/js/2.2525a523.chunk.js",
+    "static/js/2.2525a523.chunk.js.map": "/NaderNasr/SpaceARweb/static/js/2.2525a523.chunk.js.map",
+    "index.html": "/NaderNasr/SpaceARweb/index.html",
+    "static/css/main.cf2121c8.chunk.css.map": "/NaderNasr/SpaceARweb/static/css/main.cf2121c8.chunk.css.map",
+    "static/js/2.2525a523.chunk.js.LICENSE.txt": "/NaderNasr/SpaceARweb/static/js/2.2525a523.chunk.js.LICENSE.txt",
+    "static/media/Acrylic.109f5b59.jpg": "/NaderNasr/SpaceARweb/static/media/Acrylic.109f5b59.jpg",
+    "static/media/Stripes.81623095.jpg": "/NaderNasr/SpaceARweb/static/media/Stripes.81623095.jpg",
+    "static/media/across.3f365d09.gltf": "/NaderNasr/SpaceARweb/static/media/across.3f365d09.gltf",
+    "static/media/across.b4bd815f.jpg": "/NaderNasr/SpaceARweb/static/media/across.b4bd815f.jpg",
+    "static/media/acrosstwo.badad26e.gltf": "/NaderNasr/SpaceARweb/static/media/acrosstwo.badad26e.gltf",
+    "static/media/acrylicBlue.805d4d93.gltf": "/NaderNasr/SpaceARweb/static/media/acrylicBlue.805d4d93.gltf",
+    "static/media/evaporate.8bb8c5e3.gltf": "/NaderNasr/SpaceARweb/static/media/evaporate.8bb8c5e3.gltf",
+    "static/media/evaporate.c1c04cb3.jpg": "/NaderNasr/SpaceARweb/static/media/evaporate.c1c04cb3.jpg",
+    "static/media/fantasy.8c40b265.gltf": "/NaderNasr/SpaceARweb/static/media/fantasy.8c40b265.gltf",
+    "static/media/fantasy.8d278b51.jpg": "/NaderNasr/SpaceARweb/static/media/fantasy.8d278b51.jpg",
+    "static/media/flow.c1fb8f1d.gltf": "/NaderNasr/SpaceARweb/static/media/flow.c1fb8f1d.gltf",
+    "static/media/jasmine.602b5c34.gltf": "/NaderNasr/SpaceARweb/static/media/jasmine.602b5c34.gltf",
+    "static/media/jasmine.9308ec3e.jpg": "/NaderNasr/SpaceARweb/static/media/jasmine.9308ec3e.jpg",
+    "static/media/melody.9398e80e.gltf": "/NaderNasr/SpaceARweb/static/media/melody.9398e80e.gltf",
+    "static/media/melody.f9ad546b.jpg": "/NaderNasr/SpaceARweb/static/media/melody.f9ad546b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02b51c36.js",
+    "static/js/2.2525a523.chunk.js",
+    "static/css/main.cf2121c8.chunk.css",
+    "static/js/main.a2fe426c.chunk.js"
+  ]
+}
