@@ -2,10 +2,7 @@
 
 # Large size files
 
-*.iso
-*.bin
-*.ova
-*.glb
+
 
 # dependencies
 /node_modules

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
-import { Hero, Navbar, Products, Cart, Checkout, Cats,  Footer} from './components';
+import { Hero, Navbar, Products, Cart, Checkout,  Footer} from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import augmented from './augmentedData'
 

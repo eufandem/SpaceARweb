@@ -1,6 +1,4 @@
 //Posters
-import Poster from "./assets/Posters/fantasy.jpg";
-
 import fantasyPoster from "./assets/Posters/fantasy.jpg";
 import jasminePoster from "./assets/Posters/jasmine.jpg";
 import acrylicBluePoster from "./assets/Posters/Acrylic.jpg";

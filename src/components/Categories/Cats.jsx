@@ -1,26 +1,26 @@
-import React from 'react'
-import {Checkbox, FormGroup, FormControlLabel, FormControl, FormLabel } from '@material-ui/core';
+// import React from 'react'
+// import {Checkbox, FormGroup, FormControlLabel, FormControl, FormLabel } from '@material-ui/core';
 
 
-const Cats = ({filterTagged}) => {
-    return (
-        <FormControl component="fieldset" >
-      <FormLabel component="legend" row style={{paddingLeft: '20px'}}>Categories</FormLabel>
-      <FormGroup aria-label="position" row style={{position: 'relative', paddingLeft: '20px'}}>
+// const Cats = ({filterTagged}) => {
+//     return (
+//         <FormControl component="fieldset" >
+//       <FormLabel component="legend" row style={{paddingLeft: '20px'}}>Categories</FormLabel>
+//       <FormGroup aria-label="position" row style={{position: 'relative', paddingLeft: '20px'}}>
         
-        <button onClick={() => filterTagged('art')}>
-          Poster
+//         <button onClick={() => filterTagged('art')}>
+//           Poster
           
-        </button>
-        <button onClick={() => filterTagged('Status')}>
-          Status
+//         </button>
+//         <button onClick={() => filterTagged('Status')}>
+//           Status
           
-        </button>
+//         </button>
         
         
-      </FormGroup>
-    </FormControl>
-    )
-}
+//       </FormGroup>
+//     </FormControl>
+//     )
+// }
 
-export default Cats
+// export default Cats
