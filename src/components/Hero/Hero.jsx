@@ -69,7 +69,7 @@ export default function Hero() {
 			<img src={LogoHero} alt='SpaceAR Logo' />
 		</Grid>
         <Grid item xs={3} style={{position:'absolute', margin:'550px', marginLeft:'1500px', marginTop:'520px'}}>
-		<QRCode className={classes.paper} value="http://192.168.0.11:3000" />
+		<QRCode className={classes.paper} value="https://fervent-kirch-564ba7.netlify.app/" />
 		<p style={{color:'grey'}}>Scan QR to view products in Augmented Reality</p>
         </Grid>
       </Grid>
