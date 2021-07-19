@@ -6,7 +6,7 @@ import PaymentForm from '../PaymentForm'
 import {commerce} from '../../../lib/commerce'
 import {Link} from 'react-router-dom'
 
-const steps = ['Shipping Address', 'Payment details', 'Confirmation']
+const steps = ['Shipping Address', 'Payment details']
 
 const Checkout = ({cart, order, onCaptureCheckout, error}) => {
     const classes = useStyles()
