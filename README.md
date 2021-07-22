@@ -14,5 +14,5 @@ Allow people to view art work in their space before buying.
 
  - Create Search
  - Create Categories
- - Authentication
- - AR placement
+ - Digital Download
+ 
