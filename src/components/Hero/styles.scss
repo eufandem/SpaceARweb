@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 .hero {
   display: inline-block;
@@ -8,6 +9,14 @@ body {
   height: 900px;
   position: relative;
 
+}
+
+.heroMobile{
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow-x: hidden;
 }
 .diagonal-hero-bg {
   position: absolute;
@@ -27,7 +36,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  width: 99%;
   height: 500px;
   
   background: #2b5876;  /* fallback for old browsers */
@@ -128,3 +138,5 @@ $stars-big: stars(100);
     transform: translateY(0px);
   }
 }
+
+

@@ -66,6 +66,12 @@ const Footer = () => {
 									Material UI
 								</Link>
 							</Box>
+							<br />
+							<Box>
+								<Link href="https://www.blender.org/" color="inherit">
+									Blender
+								</Link>
+							</Box>
 							
 						</Grid>
 
@@ -81,8 +87,8 @@ const Footer = () => {
 							</Box>
                             <br />
 							<Box>
-								<Link href="https://www.turbosquid.com/" color="inherit">
-									3D Resources
+								<Link href="https://www.wallpaperflare.com" color="inherit">
+									Images Resources
 								</Link>
 							</Box>
 						</Grid>
