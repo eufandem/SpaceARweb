@@ -22,11 +22,19 @@ const Navbar = ({ totalItems }) => {
                     <div className={classes.grow} />
                     {location.pathname === '/' && (
                     <div className={classes.button}>
+                    {totalItems}  === 0  ? 
+                        <IconButton disable component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
+                            <Badge badgeContent={totalItems} color='secondary'>
+                                <ShoppingCart />
+                            </Badge>
+                        </IconButton>
+                    :
                         <IconButton component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
                             <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
+                    
                     </div>)}
                 </Toolbar>
             </AppBar>   

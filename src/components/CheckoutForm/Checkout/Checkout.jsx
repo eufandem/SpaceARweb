@@ -13,12 +13,11 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
     const [activeStep, setActiveStep] = useState(0)
     const [checkoutToken, setCheckoutToken] = useState(null)
     const [shippingData, setShippingData] = useState({})
+
     useEffect(() => {
         const generateToken = async() => {
             try{
                 const token = await commerce.checkout.generateToken(cart.id, {type: 'cart'})
-
-                //console.log(token)
                 setCheckoutToken(token)
             } catch (error){
                     console.log(error)
@@ -40,7 +39,8 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
         <>
             <div>
                 <Typography variant='h5'>
-                Thank you for your Purchase, {order.customer.firstname}
+                Thank you for your Purchase, {order.customer.firstname}, 
+                You will recieve an email confirmation shortly.
 
                 </Typography>
                 <Divider className={classes.divider}/>
