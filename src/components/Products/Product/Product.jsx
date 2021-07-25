@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
 import "@google/model-viewer";
 import "./styles.css";
 
@@ -7,11 +7,13 @@ const Product = ({ product, onAddToCart }) => {
   const handleAddToCart = () => onAddToCart(product.id, 1);
 
   return (
-    <div>
+    <>
+    
       <div className="wrapper" style={{maxWidth:'100%'}}>
         <div className="product-img">
+        <CssBaseline>
           <model-viewer
-            style={{ width: "330px", height: "420px" }}
+            style={{ width: "350px", height: "420px" }}
             poster={product.poster}
             src={product.glb}
             ar-placement="wall"
@@ -23,6 +25,7 @@ const Product = ({ product, onAddToCart }) => {
           >
             <button slot="exit-webxr-ar-button">x</button>
           </model-viewer>
+          </CssBaseline>
         </div>
         <div className="product-info">
           <div className="product-text">
@@ -38,7 +41,7 @@ const Product = ({ product, onAddToCart }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

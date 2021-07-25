@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import { Hero, Navbar, Products, Cart, Checkout,  Footer} from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import augmented from './augmentedData'
+import { CssBaseline } from '@material-ui/core';
 
 
 const App = () => {
@@ -77,6 +79,8 @@ const App = () => {
 	//console.log(filter)
 	return (
 		<Router>
+    <CssBaseline/>
+
 			<div>
 				<Navbar totalItems={cart.total_items} />
 
