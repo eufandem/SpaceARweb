@@ -4,11 +4,19 @@ import { ShoppingCart } from '@material-ui/icons'
 import Logo from '../../assets/Logo.png'
 import useStyles from './styles'
 import { Link, useLocation } from 'react-router-dom'
+import ReactGA from 'react-ga'
 
 const Navbar = ({ totalItems }) => {
 
     const classes = useStyles()
     const location = useLocation()
+
+    const googleClick = () => {
+        ReactGA.event({
+            category: 'Cart',
+            action: 'Navbar Cart button clicked'
+		})
+    }
    
 
     return (
@@ -22,7 +30,7 @@ const Navbar = ({ totalItems }) => {
                     <div className={classes.grow} />
                     {location.pathname === '/' && (
                     <div className={classes.button}>
-                        <IconButton component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
+                        <IconButton onClick={googleClick} component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
                             <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart />
                             </Badge>

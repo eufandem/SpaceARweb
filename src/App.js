@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import { Hero, Navbar, Products, Cart, Checkout,  Footer} from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import augmented from './augmentedData'
 import { CssBaseline } from '@material-ui/core';
+import ReactGA from 'react-ga'
 
 
 const App = () => {
@@ -27,6 +27,7 @@ const App = () => {
 	const handleAddToCart = async (productId, quantity) => {
 		const { cart } = await commerce.cart.add(productId, quantity);
 		setCart(cart);
+		
 	};
 
 	const handleUpdateCartQuantity = async (productId, quantity) => {
@@ -36,8 +37,8 @@ const App = () => {
 
 	const handleRemoveFromCart = async (productId) => {
 		const { cart } = await commerce.cart.remove(productId);
-
 		setCart(cart);
+		
 	};
 
 	const handleEmptyCart = async () => {
@@ -65,6 +66,8 @@ const App = () => {
 	console.log(merged, null, 2 + ' this is the merged object');
 
 	useEffect(() => {
+		ReactGA.initialize('UA-203455092-1')
+		ReactGA.pageview(window.location.pathname + window.location.search)
 		
 		fetchProducts();
 		fetchCart();

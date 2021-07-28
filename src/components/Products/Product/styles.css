@@ -19,11 +19,24 @@
 	margin-left: 520px;
 	width: 100px;
 	height: 70px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background: coral;
 	border: none;
 	color: white;
+	cursor: pointer;
 }
+
+.button1 {
+	background-color: #e78311; 
+	color: white; 
+	border: 2px solid white;
+  }
+  
+  .button1:hover {
+	background-color: rgb(252, 199, 85);
+	color: white;
+	
+  }
 
 .subHead {
 	font-size: 12px;

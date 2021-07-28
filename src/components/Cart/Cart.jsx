@@ -3,9 +3,24 @@ import {Container, Typography, Button, Grid} from '@material-ui/core'
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga'
 
 const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromCart }) => {
     const classes = useStyles()
+
+    const checkedOutGoogle = () => {
+        ReactGA.event({
+            category: 'checkout',
+            action: 'Checkout clicked'
+        })
+    }
+    const removedGoogle = () => {
+        ReactGA.event({
+            category: 'removed all from cart',
+            action: 'removed all clicked'
+        })
+    }
+    
 
     const EmptyCart = () => (
         <Typography variant="subtitle1">
@@ -33,7 +48,7 @@ const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromC
                     <Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>
                         Empty Cart
                     </Button>
-                    <Button component={Link} to='/checkout' className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">
+                    <Button component={Link} to='/checkout' className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary" onClick={checkedOutGoogle}>
                         Checkout
                     </Button>
                 </div>
