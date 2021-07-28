@@ -52,9 +52,9 @@ const Product = ({ product, onAddToCart }) => {
               <Heading className="header" size={1}>
                 {product.name}
               </Heading>
-              <Heading className="header" subtitle size={2}>
+              <p subtitle size={2}>
                 by SpaceAR
-              </Heading>
+              </p>
             </Media.Item>
           </Media>
           <Content
