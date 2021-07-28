@@ -36,7 +36,7 @@ const Product = ({ product, onAddToCart }) => {
                   width: '120px' 
                   
                 }}>
-      👋 Activate AR
+      👉 Activate AR 👈
   </button>
               </model-viewer>
         <Card.Content>
