@@ -1,0 +1,48 @@
+.heroLogo {
+  position: "absolute";
+  marginTop: "250px";
+  marginLeft: "100px";
+  margin-left: 120px;
+  margin-top: 30px;
+  
+}
+
+.heroLogoBg{
+  background: black;
+  height: 300px;
+}
+
+.qrCode {
+  position: absolute;
+  right: 250px; 
+  bottom: 500px;
+}
+
+.par{
+  margin: auto;
+  width: 60%;
+  padding: 12px;
+}
+
+@media screen and (max-width: 1090px){
+  .heroLogo {
+    
+    height: 40%;
+    width: 230%;
+    padding: 20px 20px 20px 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+
+  .qrCode {
+    position: absolute;
+    right: 150px; 
+    display: none; 
+    
+  }
+
+  .heroLogoBg{
+    background: black;
+    height: 300px;
+  }
+}

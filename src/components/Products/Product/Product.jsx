@@ -1,7 +1,10 @@
 import React from "react";
-import { CssBaseline } from "@material-ui/core";
 import "@google/model-viewer";
 import "./styles.css";
+import {Card, Media, Heading, Content} from 'react-bulma-components'
+import {Grid} from '@material-ui/core'
+import {Button} from 'react-bootstrap'
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const Product = ({ product, onAddToCart }) => {
   const handleAddToCart = () => onAddToCart(product.id, 1);
@@ -9,40 +12,52 @@ const Product = ({ product, onAddToCart }) => {
   return (
     <>
     
-      <div className="wrapper" style={{maxWidth:'100%'}}>
-        <div className="product-img">
-        <CssBaseline>
-          <model-viewer
-            style={{ width: "350px", height: "420px" }}
-            poster={product.poster}
-            src={product.glb}
-            ar-placement="wall"
-            camera-controls
-            camera-orbit
-            ar
-            alt="A 3D model of a reflective sphere"
-            ar-modes="scene-viewer webxr quick-look"
-          >
-            <button slot="exit-webxr-ar-button">x</button>
-          </model-viewer>
-          </CssBaseline>
-        </div>
-        <div className="product-info">
-          <div className="product-text">
-            <h1>{product.name}</h1>
-            <h2>by SpaceAR</h2>
-           <div dangerouslySetInnerHTML={{__html: `<p>${product.description}</p>`}} style={{marginBottom: '30px'}}></div> 
-          </div>
-          <div className="product-price-btn">
-            <p>{product.price.formatted_with_symbol}</p>
-            <button onClick={handleAddToCart} type="button">
-              buy now
-            </button>
-          </div>
-        </div>
-      </div>
+      <Card className="card">
+      <model-viewer
+                id="model-viewer"
+                poster={product.poster}
+                src={product.glb}
+                ar-placement="wall"
+                camera-controls
+                camera-orbit
+                ar
+                alt="A 3D model of a reflective sphere"
+                ar-modes="scene-viewer webxr quick-look"
+              >
+                <button slot="exit-webxr-ar-button">x</button>
+                <button slot="ar-button" style={{
+                  
+                  backgroundColor: "whitesmoke", 
+                  borderRadius: '4px', 
+                  border: 'none', 
+                  position: 'absolute',
+                  top: '16px',
+                  right: '100px',
+                  width: '120px' 
+                  
+                }}>
+      👋 Activate AR
+  </button>
+              </model-viewer>
+        <Card.Content>
+          <Media>
+            <Media.Item >
+              <Heading className="header" size={1}>{product.name}</Heading>
+              <Heading className="header" subtitle size={2} >
+              by SpaceAR
+              </Heading>
+            </Media.Item>
+          </Media>
+          <Content dangerouslySetInnerHTML={{ __html: `<p>${product.description}</p>` }}/>
+          <Grid container >
+          <p className="price">{product.price.formatted_with_symbol}</p>
+          <Button className="buyBtn"  onClick={handleAddToCart}>Add to Cart</Button>
+          </Grid>
+        </Card.Content>
+      </Card>
     </>
   );
 };
 
 export default Product;
+

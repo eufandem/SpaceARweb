@@ -11,6 +11,9 @@ export default makeStyles((theme) => ({
       marginLeft: drawerWidth,
     },
   },
+  button:{
+    margin: '20px auto'
+  },
   title: {
     flexGrow: 1,
     alignItems: 'center',
@@ -65,4 +68,5 @@ export default makeStyles((theme) => ({
       width: '20ch',
     },
   },
+  
 }));
