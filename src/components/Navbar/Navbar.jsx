@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Logo from '../../assets/Logo.png'
 import useStyles from './styles'
 import { Link, useLocation } from 'react-router-dom'
@@ -33,6 +34,11 @@ const Navbar = ({ totalItems }) => {
                         <IconButton onClick={googleClick} component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
                             <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart />
+                            </Badge>
+                        </IconButton>
+                        <IconButton component={Link} to="/login" aria-label="Login with Google" color="inherit">
+                            <Badge color='secondary'>
+                                <AccountCircleIcon />
                             </Badge>
                         </IconButton>
                     </div>)}
