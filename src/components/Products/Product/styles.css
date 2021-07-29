@@ -10,21 +10,27 @@
 
 p {
 	margin-left: 10px;
-	color: rgb(194, 190, 190);
+	color: rgb(116, 115, 115);
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .buyBtn{
-	font-weight: 900;
-	position: relative; 
+	
+	
 	margin-left: 520px;
-	width: 100px;
-	height: 70px;
-	border-radius: 10px;
-	background: coral;
-	border: none;
-	color: white;
-	cursor: pointer;
+	background-size: 20px 20px;
+	background-position: 12px 50%;
+	background-color: #fff;
+	position: absolute;
+	white-space: nowrap;
+	font-family: 'Roboto Regular', Helvetica Neue, sans-serif;
+	font-size: 14px;
+	height: 56px;
+	line-height: 36px;
+	border-radius: 18px;
+	border: 1px solid #DADCE0;
+	padding: 0px 16px 0px 16px;
+
 }
 
 .button1 {
@@ -64,7 +70,7 @@ p {
 		position: absolute; 
 		margin-left: 250px;
 		border-radius: 20px;
-		background: coral;
+		background: rgb(241, 104, 54);
 		border: none;
 		color: white;
 	}
@@ -98,8 +104,52 @@ p {
 	}
 	.header{
 		margin-left: 10px;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-family: 'Roboto Regular', Helvetica Neue, sans-serif;
 	}
 }
 
 
+#ar-button {
+	background-image: url(../../../assets/ic_view_in_ar_new_googblue_48dp.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 12px 50%;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	bottom: 20px;
+	padding: 0px 16px 0px 40px;
+	font-family: 'Roboto Regular', Helvetica Neue, sans-serif;
+	font-size: 14px;
+	color:#4285f4;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 18px;
+	border: 1px solid #DADCE0;
+  }
+  
+  #ar-button:active {
+	background-color: #E8EAED;
+  }
+  
+  #ar-button:focus {
+	outline: none;
+  }
+  
+  #ar-button:focus-visible {
+	outline: 1px solid #4285f4;
+  }
+  
+  model-viewer > #ar-failure {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 175px;
+    display: none;
+  }
+
+  model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+    display: block;
+  }

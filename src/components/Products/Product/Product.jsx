@@ -3,17 +3,19 @@ import "@google/model-viewer";
 import "./styles.css";
 import { Card, Media, Heading, Content } from "react-bulma-components";
 import { Grid } from "@material-ui/core";
-import { Button } from "react-bootstrap";
 import ReactGA from "react-ga";
+import { Link } from 'react-router-dom'
+
 
 const Product = ({ product, onAddToCart }) => {
   // const handleAddToCart = () => onAddToCart(product.id, 1);
   const productClick = () => {
-    ReactGA.event({
-      category: "Product",
-      action: "Product to cart button clicked",
-    },
-    onAddToCart(product.id, 1)
+    ReactGA.event(
+      {
+        category: "Product",
+        action: "Product to cart button clicked",
+      },
+      onAddToCart(product.id, 1)
     );
   };
   return (
@@ -26,25 +28,16 @@ const Product = ({ product, onAddToCart }) => {
           ar-placement="wall"
           camera-controls
           camera-orbit
+          ar-scale="fixed"
           ar
           alt="A 3D model of a reflective sphere"
           ar-modes="scene-viewer webxr quick-look"
         >
-          <button slot="exit-webxr-ar-button">x</button>
-          <button
-            slot="ar-button"
-            style={{
-              backgroundColor: "whitesmoke",
-              borderRadius: "4px",
-              border: "none",
-              position: "absolute",
-              top: "16px",
-              right: "100px",
-              width: "120px",
-            }}
-          >
-            👉 Activate AR 👈
+          <button slot="exit-webxr-ar-button" component={Link} to='/'>x</button>
+          <button slot="ar-button" id="ar-button">
+            View in your space
           </button>
+          <button id="ar-failure">AR is not tracking!</button>
         </model-viewer>
         <Card.Content>
           <Media>
