@@ -1,0 +1,86 @@
+.img {
+  padding-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.header1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 780px;
+}
+
+.text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 800px;
+}
+
+.button1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+    color: gray;
+    background-size: 20px 20px;
+    background-color: #fff;
+    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    height: 56px;
+    border-radius: 18px;
+    padding: 5px 16px 0px 16px;
+    text-transform: none;
+    left: 900px;
+}
+
+.buttonPlace{
+  margin-top: 20px;
+}
+
+.button1:hover {
+  background-color: rgb(245, 179, 38);
+  color: white;
+}
+
+@media screen and (max-width: 1338px) {
+  .img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+  .header1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  .text {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+  }
+  .button1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+    color: gray;
+    background-size: 20px 20px;
+    background-color: #fff;
+    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    height: 56px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #dadce0;
+    padding: 0px 16px 0px 16px;
+    cursor: pointer;
+    left: 120px;
+  }
+}

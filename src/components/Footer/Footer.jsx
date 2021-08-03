@@ -12,7 +12,7 @@ const Footer = () => {
 					<Grid container spacing={5}>
 						<Grid item xs={12} sm={4}>
                         <Box borderBottom={2}>
-								<h1>Socials</h1>
+								<h1>Contact</h1>
 							</Box>
                             
 							

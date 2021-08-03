@@ -32,11 +32,12 @@ const Navbar = ({ totalItems }) => {
                     {location.pathname === '/' && (
                     <div className={classes.button}>
                         <IconButton onClick={googleClick} component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
-                            <Badge badgeContent={totalItems} color='secondary'>
+                            <Badge badgeContent={totalItems} disabled={!totalItems} color='secondary'>
+                            {/* DISABLE TOTAL ITEms */}
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
-                        <IconButton component={Link} to="/login" aria-label="Login with Google" color="inherit">
+                        <IconButton disabled component={Link} to="/login" aria-label="Login with Google" color="inherit">
                             <Badge color='secondary'>
                                 <AccountCircleIcon />
                             </Badge>

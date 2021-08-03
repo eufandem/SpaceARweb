@@ -4,6 +4,7 @@ import useStyles from './styles';
 import CartItem from './CartItem/CartItem'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
+import EmptyCartPage from '../EmptyCart/EmptyCart'
 
 const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromCart }) => {
     const classes = useStyles()
@@ -23,9 +24,9 @@ const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromC
     
 
     const EmptyCart = () => (
-        <Typography variant="subtitle1">
-            <Link to="/" className={classes.link}>You have no items in your shopping cart.</Link>
-        </Typography>
+        
+             <EmptyCartPage/>
+        
     );
 
     
@@ -36,7 +37,7 @@ const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromC
             {cart.line_items.map((item)=>(
                 <Grid item xs={12} sm={4} key={item.id}>
                     <CartItem item={item} onUpdadateCartQty={handleUpdateCartQuantity} onRemoveFromCart={handleRemoveFromCart}/>
-                    {/* <div>{item.name}</div> */}
+                    
                 </Grid>
             ))}
         </Grid>
@@ -56,7 +57,7 @@ const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromC
         </>
     )
 
-    if(!cart.line_items) return ('Loading...')
+    if(!cart.line_items) return (<EmptyCartPage/>)
 
     return (
         <Container>

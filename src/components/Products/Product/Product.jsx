@@ -45,7 +45,7 @@ const Product = ({ product, onAddToCart }) => {
               <Heading className="header" size={1}>
                 {product.name}
               </Heading>
-              <p subtitle size={2}>
+              <p className='p' subtitle size={2} style={{}}>
                 by SpaceAR
               </p>
             </Media.Item>
@@ -57,9 +57,11 @@ const Product = ({ product, onAddToCart }) => {
           />
           <Grid container>
             <p className="price">{product.price.formatted_with_symbol}</p>
-            <button className="buyBtn button1" onClick={productClick}>
+            <div className="buttonDiv">
+            <button className="buyBtn" onClick={productClick}>
               Add to Cart
             </button>
+            </div>
           </Grid>
         </Card.Content>
       </Card>

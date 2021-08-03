@@ -1,20 +1,23 @@
 .heroLogo {
-  position: "absolute";
+  /* position: "absolute";
   margin-left: 120px;
   margin-top: 30px;
-  width: 500px;
+  width: 500px; */
+  visibility: hidden;
   
 }
 
 .heroLogoBg{
-  background: black;
-  height: 300px;
+  background: rgb(41, 26, 105);
+  height: 200px;
 }
 
 .qrCode {
   position: absolute;
-  right: 250px; 
-  bottom: 450px;
+  right: 160px; 
+  bottom: 500px;
+  padding-bottom: 60px;
+  
 }
 
 .par{
@@ -26,23 +29,17 @@
 @media screen and (max-width: 1090px){
   .heroLogo {
     
-    height: 40%;
-    width: 230%;
-    padding: 20px 20px 20px 20px;
-    margin-left: 70px;
-    margin-top: 20px;
+    visibility: hidden;
   }
 
   .qrCode {
-    position: absolute;
-    right: 150px; 
-    display: none; 
+    visibility: hidden; 
     
   }
 
   .heroLogoBg{
-    background: black;
-    height: 300px;
+    background: rgb(41, 26, 105);
+    height: 30px;
   }
 }
 

@@ -4,9 +4,9 @@ import "./styles.css";
 import "@google/model-viewer";
 import QRCode from "react-qr-code";
 import LogoHero from "../../assets/LogoSpaceAR_150.png";
-import LogoHeroMobile from "../../assets/LogoHero.png";
-import HeroModel from "../../assets/Paintings/Hero.gltf";
-import HeroPoster from "../../assets/Posters/HeroPoster.png";
+// import LogoHeroMobile from "../../assets/LogoHero.png";
+// import HeroModel from "../../assets/Paintings/Hero.gltf";
+// import HeroPoster from "../../assets/Posters/HeroPoster.png";
 
 export default function Hero() {
 
