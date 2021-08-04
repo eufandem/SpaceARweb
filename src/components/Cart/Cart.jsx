@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Typography, Button, Grid} from '@material-ui/core'
+import {Typography, Button, Grid} from '@material-ui/core'
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem'
 import { Link } from 'react-router-dom'
@@ -60,11 +60,9 @@ const Cart = ({cart,handleUpdateCartQuantity, handleEmptyCart, handleRemoveFromC
     if(!cart.line_items) return (<EmptyCartPage/>)
 
     return (
-        <Container>
-            <div className={classes.toolbar}/>
-            <Typography className={classes.tite} variant="h3" gutterBottom>Your Shopping Cart</Typography>
+        <div style={{padding: '20px'}}>
             { !cart.line_items.length ? <EmptyCart /> : <FilledCart />}
-        </Container>
+        </div>
     )
 }
 

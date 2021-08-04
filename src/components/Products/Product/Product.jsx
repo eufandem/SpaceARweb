@@ -5,6 +5,8 @@ import { Card, Media, Heading, Content } from "react-bulma-components";
 import { Grid } from "@material-ui/core";
 import ReactGA from "react-ga";
 import { Link } from 'react-router-dom'
+import { CssBaseline } from '@material-ui/core';
+import ProdOverview from '../ProductOverview/ProdOverview'
 
 
 const Product = ({ product, onAddToCart }) => {
@@ -20,6 +22,7 @@ const Product = ({ product, onAddToCart }) => {
   };
   return (
     <>
+    <CssBaseline/>
       <Card className="card">
         <model-viewer
           id="model-viewer"
@@ -45,9 +48,12 @@ const Product = ({ product, onAddToCart }) => {
               <Heading className="header" size={1}>
                 {product.name}
               </Heading>
-              <p className='p' subtitle size={2} style={{}}>
-                by SpaceAR
+              <p className='p' subtitle size={3}>
+                {product.framed}
               </p>
+              {/* <p className='p' style={{color: 'grey'}}>
+              {product.inventory.available} left
+              </p> */}
             </Media.Item>
           </Media>
           <Content
@@ -62,9 +68,15 @@ const Product = ({ product, onAddToCart }) => {
               Add to Cart
             </button>
             </div>
+            <div className="buttonDiv">
+            {/* <button onClick={productClick}>
+              over view
+            </button> */}
+            </div>
           </Grid>
         </Card.Content>
       </Card>
+      
     </>
   );
 };

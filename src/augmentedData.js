@@ -38,6 +38,7 @@ const augmented = [
     categories: {
       slug: "",
     },
+    framed: 'Shipped with Frame'
   },
   {
     id: 1,
@@ -49,6 +50,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Digital Download'
   },
   {
     id: 2,
@@ -60,6 +62,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Digital Download'
   },
   {
     id: 3,
@@ -71,6 +74,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Shipped with Frame'
   },
   {
     id: 4,
@@ -82,6 +86,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Shipped with Frame'
   },
   {
     id: 5,
@@ -93,6 +98,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Shipped with Frame'
   },
   {
     id: 6,
@@ -103,6 +109,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Shipped with Frame'
   },
   {
     id: 7,
@@ -113,6 +120,7 @@ const augmented = [
       formatted_with_symbol: "",
     },
     categories: { slug: "" },
+    framed: 'Digital Download'
   },
 ];
 

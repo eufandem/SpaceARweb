@@ -1,6 +1,7 @@
 #model-viewer {
   width: 890px;
   height: 420px;
+  margin: auto;
 }
 
 .price {
@@ -10,7 +11,8 @@
 
 .p {
   margin-left: 10px;
-  color: rgb(116, 115, 115);
+  font-size: 20px;
+  color: rgb(0, 77, 243);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -44,18 +46,19 @@
 }
 
 .card {
-  margin-left: 20px;
+  margin-left: auto;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.884);
-  box-shadow: 2px 1px 3px grey;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .header {
   margin-left: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
 }
 
 
-@media screen and (max-width: 1338px) {
+@media only screen and (max-width: 1338px) {
   #model-viewer {
     width: 340px;
     height: 420px;
@@ -84,7 +87,7 @@
     position: absolute;
   }
   .card {
-    margin-left: 20px;
+    margin-left: auto;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.884);
   }
@@ -94,29 +97,83 @@
   }
 }
 
-@media screen and (max-width: 375px) {
-  #model-viewer {
-    width: 340px;
-    height: 420px;
+@media only screen and (max-width: 854px) {
+	/* #model-viewer {
+	  width: 320px;
+	  height: 420px;
+	} */
+	.buyBtn {
+	  cursor: pointer;
+	  right: 55px;
+	  position: relative;
+	  background-color: #e78311;
+	  color: white;
+	  border: 2px solid white;
+	  margin-left: auto;
+	  height: 50px;
+	  width: 150px;
+	  font-size: 20px;
+	}
+  
+	.buyBtn:hover {
+	  background-color: rgb(252, 199, 85);
+	  color: white;
+	}
+  
+	.buttonDiv {
+	  margin: 40px;
+	  padding-left: 200px;
+	  position: absolute;
+	}
+	.card {
+	  margin-left: auto;
+	  border-radius: 5px;
+	  background: rgba(255, 255, 255, 0.884);
+	}
+	.header {
+	  margin-left: 10px;
+	  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
   }
-  .buyBtn {
-    font-weight: 200;
-    position: absolute;
-    margin-left: 200px;
-    border-radius: 20px;
-    background: coral;
-    border: none;
-    color: white;
+
+  @media only screen and (max-width: 375px) {
+	#model-viewer {
+	  width: 300px;
+	  height: 420px;
+	}
+	.buyBtn {
+	  cursor: pointer;
+	  right: 55px;
+	  position: relative;
+	  background-color: #e78311;
+	  color: white;
+	  border: 2px solid white;
+	  margin-left: auto;
+	  height: 50px;
+	  width: 150px;
+	  font-size: 20px;
+	}
+  
+	.buyBtn:hover {
+	  background-color: rgb(252, 199, 85);
+	  color: white;
+	}
+  
+	.buttonDiv {
+	  margin: 40px;
+	  padding-left: 160px;
+	  position: absolute;
+	}
+	.card {
+	  margin-left: 20px;
+	  border-radius: 5px;
+	  background: rgba(255, 255, 255, 0.884);
+	}
+	.header {
+	  margin-left: 10px;
+	  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
   }
-  .price {
-    font-size: 30px;
-    margin-left: 20px;
-  }
-  .header {
-    margin-left: 10px;
-    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
-  }
-}
 
 #ar-button {
   background-image: url(../../../assets/ic_view_in_ar_new_googblue_48dp.png);

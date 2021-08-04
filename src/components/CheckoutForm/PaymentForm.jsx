@@ -41,6 +41,8 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
     }
   };
 
+  // console.log(checkoutToken + "THIS IS THE CHECKOUT OUT TOKEN")
+
   return (
     <>
       <Review checkoutToken={checkoutToken} />
