@@ -24,16 +24,14 @@ const Navbar = ({ totalItems }) => {
         <>
             <AppBar position='sticky' color='inherit' className={classes.appBar} spacing={12}>
                 <Toolbar>
-                    <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
-                        <img src={Logo} alt="Space AR" height="45px" className={classes.image} />
-                        
-                    </Typography>
+                    <Link to='/'>
+                        <img src={Logo} alt="Space AR" className='h-10' />
+                    </Link>
                     <div className={classes.grow} />
                     {location.pathname === '/' && (
                     <div className={classes.button}>
                         <IconButton onClick={googleClick} component={Link} to="/cart" aria-label="Show Cart Item" color="inherit">
                             <Badge badgeContent={totalItems} disabled={!totalItems} color='secondary'>
-                            {/* DISABLE TOTAL ITEms */}
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
