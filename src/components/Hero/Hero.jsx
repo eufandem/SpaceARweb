@@ -1,9 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import "./styles.css";
 import "@google/model-viewer";
 import QRCode from "react-qr-code";
-import LogoHero from "../../assets/LogoSpaceAR_150.png";
 export default function Hero() {
 
   return (
@@ -12,7 +10,7 @@ export default function Hero() {
           <div className='hidden lg:flex container pt-10 relative pl-20'>
             <QRCode value="https://spacear.netlify.app"/>
             </div>
-            <div className='hidden md:block text-white font-black mr-96 pl-32 pt-5'>
+            <div className='hidden md:none text-white font-black mr-96 pl-32 pt-5'>
             <p>
               Scan to view in AR
             </p>
