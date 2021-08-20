@@ -14,7 +14,8 @@ import acrosstwoPoster from "./assets/Posters/across.jpg";
 
 import acrylicBlue from "./assets/Paintings/acrylicBlue.gltf";
 import fantasy from "./assets/Paintings/fantasy.gltf";
-import jasmine from "./assets/Paintings/jasmine.gltf";
+import jasmine from "./assets/Paintings/jasmine_cg.gltf";
+
 import melody from "./assets/Paintings/melody.gltf";
 import flow from "./assets/Paintings/flow.gltf";
 import evap from "./assets/Paintings/evaporate.gltf";

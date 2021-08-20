@@ -4,9 +4,6 @@ import "./styles.css";
 import "@google/model-viewer";
 import QRCode from "react-qr-code";
 import LogoHero from "../../assets/LogoSpaceAR_150.png";
-// import LogoHeroMobile from "../../assets/LogoHero.png";
-// import HeroModel from "../../assets/Paintings/Hero.gltf";
-// import HeroPoster from "../../assets/Posters/HeroPoster.png";
 
 export default function Hero() {
 
@@ -14,13 +11,11 @@ export default function Hero() {
     <>
       
         <Grid container className="heroLogoBg">
-        <Grid item xs={3}>
-            <img className="heroLogo" src={LogoHero} alt="SpaceAR Logo" />
-          </Grid>
+        
           <Grid item className="qrCode">
             <QRCode value="https://spacear.netlify.app"/>
             <p className='par'>
-              Scan QR to view products in Augmented Reality
+              Scan QR to view products in your space.
             </p>
           </Grid>
         </Grid>

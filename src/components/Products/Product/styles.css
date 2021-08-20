@@ -47,11 +47,12 @@
   margin-left: 20px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.884);
-  box-shadow: 2px 1px 3px grey;
+  box-shadow: 10px 40px 30px rgb(189, 189, 189);
 }
 .header {
   margin-left: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #4285f4;
 }
 
 
@@ -94,19 +95,25 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   #model-viewer {
-    width: 340px;
+    width: 250px;
     height: 420px;
+    position: relative;
+  }
+  .buttonDiv {
+    margin: 40px;
+    padding-left: 200px;
+    position: absolute;
   }
   .buyBtn {
     font-weight: 200;
-    position: absolute;
-    margin-left: 200px;
+    position: relative;
     border-radius: 20px;
     background: coral;
     border: none;
     color: white;
+    right: 90px;
   }
   .price {
     font-size: 30px;

@@ -1,15 +1,8 @@
-.heroLogo {
-  /* position: "absolute";
-  margin-left: 120px;
-  margin-top: 30px;
-  width: 500px; */
-  visibility: hidden;
-  
-}
+
 
 .heroLogoBg{
   background: rgb(41, 26, 105);
-  height: 200px;
+  height: 400px;
 }
 
 .qrCode {
@@ -22,11 +15,12 @@
 
 .par{
   margin: auto;
-  width: 60%;
-  padding: 12px;
+  width: 90%;
+  padding-top: 10px;
+  color: white;
 }
 
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 1112px){
   .heroLogo {
     
     visibility: hidden;
@@ -38,8 +32,8 @@
   }
 
   .heroLogoBg{
-    background: rgb(41, 26, 105);
-    height: 30px;
+    visibility: hidden; 
+    height: 0px;
   }
 }
 

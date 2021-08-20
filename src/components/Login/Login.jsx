@@ -1,21 +1,25 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
-import { GoogleLogin } from "react-google-login";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import { IconButton, Badge} from '@material-ui/core'
+
 
 const Login = () => {
-
-    const responseGoogle = (res) => {
-        console.log(res)
-    }
+  const { loginWithRedirect } = useAuth0();
   return (
     <div>
-      <h1>Google Login</h1>
-      <GoogleLogin
-        clientId="606550930067-3rnpkji74rfita1ncpinlsfplqpql1o8.apps.googleusercontent.com"
-        buttonText="Login"
-        onSuccess={responseGoogle}
-        onFailure={responseGoogle}
-        cookiePolicy={"single_host_origin"}
-      />
+      
+      <IconButton
+        color="inherit"
+        onClick={() => loginWithRedirect()}
+      >
+        <Badge color="secondary">
+        <div>
+          <AccountCircleIcon />
+          <div style={{fontSize:'12px'}}>Log in</div>
+          </div>
+        </Badge>
+      </IconButton>
     </div>
   );
 };
