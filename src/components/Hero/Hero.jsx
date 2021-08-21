@@ -13,9 +13,9 @@ const {user} = useAuth0
       
         <Grid container className="heroLogoBg">
         {!user ? 
-        <h1 style={{fontSize:'60px', color: 'white', padding: '40px'}}>Welcome to SpaceAR</h1>
+        (<h1 style={{fontSize:'60px', color: 'white', padding: '40px'}}>Welcome to SpaceAR</h1>)
          : 
-         <h1 style={{fontSize:'60px', color: 'white', padding: '40px'}}>Welcome, {user.given_name}!</h1>}
+         (<h1 style={{fontSize:'60px', color: 'white', padding: '40px'}}>Welcome, {user.given_name}!</h1>)}
           <Grid item className="qrCode">
             <QRCode value="https://spacear.netlify.app"/>
             <p className='par'>
