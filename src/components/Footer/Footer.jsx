@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Box, Link } from '@material-ui/core';
-import { FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 
 import './styles.css';
 
@@ -29,10 +29,16 @@ const Footer = () => {
 									<FaTwitter/> Twitter
 								</Link>
 							</Box>
+							<br/>
+							<Box>
+								<Link href="mailto:nadernasr7@gmail.com" color="inherit">
+									<FaMailBulk/> E-mail
+								</Link>
+							</Box>
 							<br />
 						</Grid>
 						<Grid item xs={12} sm={4}>
-							<Box borderBottom={2}>
+							{/* <Box borderBottom={2}>
 								<h1>Technologies</h1>
 							</Box>
 							<br />
@@ -71,7 +77,7 @@ const Footer = () => {
 								<Link href="https://www.blender.org/" color="inherit">
 									Blender
 								</Link>
-							</Box>
+							</Box> */}
 							
 						</Grid>
 
@@ -82,15 +88,11 @@ const Footer = () => {
 							<br />
 							<Box>
 								<Link href="https://www.nadernasr.ca/" color="inherit">
-									Personal Website
+									Who am I ?
 								</Link>
 							</Box>
                             <br />
-							<Box>
-								<Link href="https://www.wallpaperflare.com" color="inherit">
-									Images Resources
-								</Link>
-							</Box>
+							
 						</Grid>
 					</Grid>
 				</Container>

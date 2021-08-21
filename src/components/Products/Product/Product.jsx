@@ -23,7 +23,7 @@ const Product = ({ product, onAddToCart }) => {
   return (
     <>
     
-      <div className="card">
+      <div className="card" >
       
         <model-viewer
           id="model-viewer"
@@ -46,7 +46,7 @@ const Product = ({ product, onAddToCart }) => {
         <Card.Content>
           <Media>
             <Media.Item>
-              <Heading className="header" size={1}>
+              <Heading className="header">
                 {product.name}
               </Heading>
               <p className='p' subtitle size={2}>
@@ -55,16 +55,22 @@ const Product = ({ product, onAddToCart }) => {
             </Media.Item>
           </Media>
           <Content
+          className = 'desc'
             dangerouslySetInnerHTML={{
               __html: `<p>${product.description}</p>`,
             }}
           />
           <Grid container>
-            <p className="price">{product.price.formatted_with_symbol}</p>
+          
             <div className="buttonDiv">
+            <div className='floatChild'>
+            <p className="price">{product.price.formatted_with_symbol}</p>
+            </div>
+            <div className="floatChild">
             <button className="buyBtn" onClick={productClick}>
               Add to Cart
             </button>
+            </div>
             </div>
           </Grid>
         </Card.Content>

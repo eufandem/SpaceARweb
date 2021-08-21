@@ -1,77 +1,42 @@
-#model-viewer {
-  width: 890px;
-  height: 420px;
-}
-
-.price {
-  font-size: 30px;
-  margin-left: 20px;
-}
-
-.p {
-  margin-left: 10px;
-  color: rgb(116, 115, 115);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.buyBtn {
-  cursor: pointer;
-  right: -100px;
-  bottom: 10px;
-  position: absolute;
-  background-color: #e78311;
-  color: white;
-  border: 2px solid white;
-  height: 60px;
-  width: 160px;
-  font-size: 20px;
-  border-radius: 5px;
-}
-
-.buyBtn:hover {
-  background-color: rgb(252, 199, 85);
-  color: white;
-}
-
-.buttonDiv {
-	margin: 40px;
-	padding-left: 650px;
-	position: absolute;
+@media screen and (min-width: 700px) {
+  body {
+    height: 100vh;
   }
 
-.subHead {
-  font-size: 12px;
-}
-
-.card {
-  margin-left: 20px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.884);
-  box-shadow: 10px 40px 30px rgb(189, 189, 189);
-}
-.header {
-  margin-left: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #4285f4;
-}
-
-
-@media screen and (max-width: 1338px) {
   #model-viewer {
-    width: 340px;
-    height: 420px;
+    width: 1200px;
+    height: 600px;
   }
+
+  .price {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 400;
+    color: blue;
+  }
+
+  .desc {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+  }
+
+  .p {
+    margin-left: 30px;
+    color: rgb(116, 115, 115);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+  }
+
   .buyBtn {
     cursor: pointer;
-    right: 55px;
-    position: relative;
     background-color: #e78311;
     color: white;
     border: 2px solid white;
-    margin-left: auto;
-    height: 50px;
-    width: 150px;
+    height: 60px;
+    width: 160px;
     font-size: 20px;
+    border-radius: 5px;
   }
 
   .buyBtn:hover {
@@ -80,48 +45,103 @@
   }
 
   .buttonDiv {
-    margin: 40px;
-    padding-left: 200px;
-    position: absolute;
+    position: relative;
   }
+
+  .floatChild{
+    width: 50%;
+    float: left;
+    padding-left: 250px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    
+  }
+
+  .subHead {
+    font-size: 12px;
+  }
+
   .card {
-    margin-left: 20px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.884);
+    
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
+
   .header {
     margin-left: 10px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #025ef1;
+    font-size: 50px;
+    padding-left: 20px;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 690px) {
+
+  .body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   #model-viewer {
-    width: 250px;
-    height: 420px;
-    position: relative;
+    width: 320px;
+    height: 400px;
+    align-content: center;
   }
-  .buttonDiv {
-    margin: 40px;
-    padding-left: 200px;
-    position: absolute;
-  }
-  .buyBtn {
-    font-weight: 200;
-    position: relative;
-    border-radius: 20px;
-    background: coral;
-    border: none;
-    color: white;
-    right: 90px;
-  }
+
   .price {
-    font-size: 30px;
-    margin-left: 20px;
+    color: #4285f4;
+    font-size: 20px;
+  }
+
+  .p {
+  }
+
+  .buyBtn {
+    visibility: hidden;
+  }
+
+  .buyBtn:after {
+    content:'Buy'; 
+    visibility: visible;
+    background-color: #e78311;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .buyBtn:hover {
+    background-color: #fa8500;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+  }
+
+  .buttonDiv {
+    position: relative;
+  }
+
+  .floatChild{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    
+  }
+
+  .subHead {
+    color: gray;
+  }
+
+  .card {
+
   }
   .header {
-    margin-left: 10px;
-    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+    color: blue;
+    font-size: 25px;
   }
 }
 

@@ -1,14 +1,15 @@
 
 
 .heroLogoBg{
-  background: rgb(41, 26, 105);
+  background: linear-gradient(90deg, rgba(24,104,213,1) 70%, rgba(2,0,36,1) 70%);
   height: 400px;
+  
 }
 
 .qrCode {
   position: absolute;
   right: 160px; 
-  bottom: 500px;
+  bottom: 450px;
   padding-bottom: 60px;
   
 }

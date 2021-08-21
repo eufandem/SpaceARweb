@@ -14,9 +14,9 @@ const Products = ({ merged, onAddToCart }) => {
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
-      <Grid container justify="center" spacing={3}>
+      <Grid container justify="center" spacing={6}>
         {merged.map((product) => (
-          <Grid key={product.id} item xs={12} sm={12} md={12} lg={6} justify="center">
+          <Grid key={product.id} item justify="center">
             <Product product={product} onAddToCart={onAddToCart} />
           </Grid>
         ))}
