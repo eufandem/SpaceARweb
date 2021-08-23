@@ -16,7 +16,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Logout from "../Login/Logout";
 
 const Navbar = ({ totalItems }) => {
-    console.log(JSON.stringify(totalItems))
+    // console.log(JSON.stringify(totalItems))
   const classes = useStyles();
   const location = useLocation();
 
