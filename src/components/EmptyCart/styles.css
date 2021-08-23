@@ -1,26 +1,92 @@
 .img {
-  padding-top: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-45%, -50%);
 }
 
 .header1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 780px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-40%, -50%);
+  padding-top: 20%;
 }
 
 .text {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-40%, -50%);
+  padding-top: 28%;
+
 }
 
 .button1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 23px;
+  color: gray;
+  background-size: 20px 20px;
+  background-color: #fff;
+  font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  height: 56px;
+  border-radius: 18px;
+  padding: 5px 16px 0px 16px;
+  text-transform: none;
+  left: 45%;
+}
+
+.buttonPlace {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  padding-top: 38%;
+}
+
+.button1:hover {
+  background-color: rgb(245, 179, 38);
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .img {
+    position: fixed;
+    padding-bottom: 200px;
+  }
+  
+  .header1 {
+    position: fixed;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-40%, -50%);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+
+  }
+  
+  .text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-40%, -50%);
+    padding-top: 300px;
+    
+    text-align: center;
+
+  
+  }
+  
+  .button1 {
     margin-left: auto;
     margin-right: auto;
     font-size: 23px;
@@ -34,37 +100,55 @@
     border-radius: 18px;
     padding: 5px 16px 0px 16px;
     text-transform: none;
-    left: 900px;
+    left: 45%;
+  }
+  
+  .buttonPlace {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    padding-top: 400px;
+  }
+  
+  .button1:hover {
+    background-color: rgb(245, 179, 38);
+    color: white;
+  }
 }
 
-.buttonPlace{
-  margin-top: 20px;
-}
-
-.button1:hover {
-  background-color: rgb(245, 179, 38);
-  color: white;
-}
-
-@media screen and (max-width: 1338px) {
+@media screen and (max-width: 500px) {
   .img {
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    padding-bottom: 200px;
+    left: 45%;
   }
+  
   .header1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
+    position: fixed;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-40%, -50%);
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+
   }
+  
   .text {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-40%, -50%);
+    padding-top: 300px;
+    
+    text-align: center;
+
+  
   }
+  
   .button1 {
     margin-left: auto;
     margin-right: auto;
@@ -76,11 +160,23 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     height: 56px;
-    line-height: 36px;
     border-radius: 18px;
-    border: 1px solid #dadce0;
-    padding: 0px 16px 0px 16px;
-    cursor: pointer;
-    left: 120px;
+    padding: 5px 16px 0px 16px;
+    text-transform: none;
+    left: 45%;
+  }
+  
+  .buttonPlace {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-70%, -50%);
+    padding-top: 500px;
+  }
+  
+  .button1:hover {
+    background-color: rgb(245, 179, 38);
+    color: white;
   }
 }

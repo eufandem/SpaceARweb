@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -16,6 +16,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Logout from "../Login/Logout";
 
 const Navbar = ({ totalItems }) => {
+    console.log(JSON.stringify(totalItems))
   const classes = useStyles();
   const location = useLocation();
 
@@ -26,7 +27,18 @@ const Navbar = ({ totalItems }) => {
     });
   };
 
-  const { isAuthenticated, user } = useAuth0();
+  useEffect(() => {
+    saveLocal();
+    
+  }, [totalItems]);
+
+  const saveLocal = () => {
+    localStorage.setItem("totalItems", JSON.stringify);
+  };
+
+  
+
+  const { isAuthenticated } = useAuth0();
 
   return (
     <>
@@ -61,18 +73,15 @@ const Navbar = ({ totalItems }) => {
                 aria-label="Show Cart Item"
                 color="inherit"
               >
-                <Badge
-                  badgeContent={totalItems}
-                  color="secondary"
-                >
-                <div>
-                  <ShoppingCart />
-                  <div style={{fontSize:'12px'}}>Cart</div>
-                </div>
+                <Badge badgeContent={totalItems} color="secondary">
+                  <div>
+                    <ShoppingCart />
+                    <div style={{ fontSize: "12px" }}>Cart</div>
+                  </div>
                 </Badge>
               </IconButton>
               <IconButton>
-              {!isAuthenticated ? <Login/> : <Logout/>}
+                {!isAuthenticated ? <Login /> : <Logout />}
               </IconButton>
             </div>
           )}

@@ -8,17 +8,20 @@ import ReactGA from 'react-ga'
 
 
 const App = () => {
+
+
 	const [ products, setProducts ] = useState([]);
 	const [ cart, setCart ] = useState({});
 	const [order, setOrder] = useState({})
 	const [errorMessage, setErrorMessage] = useState('')
+
+	
 	
 	const fetchProducts = async () => {
 		const { data } = await commerce.products.list();
 		setProducts(data);
 	};
 
-	//console.log(products)
 
 	const fetchCart = async () => {
 		setCart(await commerce.products.retrieve());
@@ -63,7 +66,7 @@ const App = () => {
 	}
 
 	let merged = augmented.map((item, i) => Object.assign({}, item, products[i]));
-	console.log(merged, null, 2 + ' this is the merged object');
+	
 
 	useEffect(() => {
 		ReactGA.initialize('UA-203455092-1')
@@ -73,6 +76,8 @@ const App = () => {
 		fetchCart();
 	}, []);
 
+	
+	
 	
 	// const filterTagged = (art) => {
 	// 	const checkedBoxTag = merged.filter(m => m.categories.slug === art)

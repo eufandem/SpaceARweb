@@ -73,6 +73,50 @@
     font-size: 50px;
     padding-left: 20px;
   }
+  #ar-button {
+    background-image: url(../../../assets/ic_view_in_ar_new_googblue_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 12px 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 20px;
+    padding: 0px 16px 0px 40px;
+    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color: #4285f4;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #dadce0;
+  }
+  
+  #ar-button:active {
+    background-color: #e8eaed;
+  }
+  
+  #ar-button:focus {
+    outline: none;
+  }
+  
+  #ar-button:focus-visible {
+    outline: 1px solid #4285f4;
+  }
+  
+  model-viewer > #ar-failure {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 175px;
+    display: none;
+  }
+  
+  model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -97,20 +141,16 @@
   }
 
   .buyBtn {
-    visibility: hidden;
-  }
-
-  .buyBtn:after {
-    content:'Buy'; 
-    visibility: visible;
     background-color: #e78311;
     color: white;
     border: 2px solid white;
     font-size: 20px;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    
   }
+
 
   .buyBtn:hover {
     background-color: #fa8500;
@@ -121,14 +161,14 @@
 
   .buttonDiv {
     position: relative;
+    left: 20px;
   }
 
   .floatChild{
     width: 50%;
     float: left;
-    padding-left: 30px;
-    padding-right: 5px;
-    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
     
   }
 
@@ -143,49 +183,50 @@
     color: blue;
     font-size: 25px;
   }
+  #ar-button {
+    background-image: url(../../../assets/ic_view_in_ar_new_googblue_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 12px 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 20px;
+    padding: 0px 16px 0px 40px;
+    font-family: "Roboto Regular", Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color: #4285f4;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #dadce0;
+  }
+  
+  #ar-button:active {
+    background-color: #e8eaed;
+  }
+  
+  #ar-button:focus {
+    outline: none;
+  }
+  
+  #ar-button:focus-visible {
+    outline: 1px solid #4285f4;
+  }
+  
+  model-viewer > #ar-failure {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 175px;
+    display: none;
+  }
+  
+  model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+    display: block;
+  }
 }
 
-#ar-button {
-  background-image: url(../../../assets/ic_view_in_ar_new_googblue_48dp.png);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: 12px 50%;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  bottom: 20px;
-  padding: 0px 16px 0px 40px;
-  font-family: "Roboto Regular", Helvetica Neue, sans-serif;
-  font-size: 14px;
-  color: #4285f4;
-  height: 36px;
-  line-height: 36px;
-  border-radius: 18px;
-  border: 1px solid #dadce0;
-}
 
-#ar-button:active {
-  background-color: #e8eaed;
-}
-
-#ar-button:focus {
-  outline: none;
-}
-
-#ar-button:focus-visible {
-  outline: 1px solid #4285f4;
-}
-
-model-viewer > #ar-failure {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 175px;
-  display: none;
-}
-
-model-viewer[ar-tracking="not-tracking"] > #ar-failure {
-  display: block;
-}

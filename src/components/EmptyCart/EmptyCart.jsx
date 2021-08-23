@@ -6,11 +6,18 @@ import {Button} from '@material-ui/core'
 
 const EmptyCartPage = () => {
 
+  
+
   return (
-    <div>
+    <div className='container'>
       <img className="img" alt="empty cart image" src={emptyCart}/>
-      <h1 className="header1">Your Cart is Currently Empty</h1>
-      <p className="text">Looks like you haven't added any product to your cart</p>
+      <div className="header1">
+      <h1>Your Cart is Currently Empty</h1>
+      </div>
+      <div className="text">
+      <p>Looks like you haven't added any product to your cart</p>
+      </div>
+      
       <div className='buttonPlace'>
       <Button component={Link} to="/" className="button1" >Add to Cart</Button>
       </div>

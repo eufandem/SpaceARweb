@@ -1,8 +1,20 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
+.flex-child {
+  flex: 1;
+  
+}
+
+.flex-child:first-child {
+  flex-grow: 3;
+} 
 
 .heroLogoBg{
   background: linear-gradient(90deg, rgba(24,104,213,1) 70%, rgba(2,0,36,1) 70%);
-  height: 400px;
+  height: 500px;
   
 }
 
@@ -22,6 +34,24 @@
 }
 
 @media screen and (max-width: 1112px){
+  .flex-container {
+    visibility: hidden;
+    display: none;
+  }
+  
+  .flex-child {
+    visibility: hidden;
+    display: none;
+
+    
+  }
+  
+  .flex-child:first-child {
+    visibility: hidden;
+    display: none;
+
+  } 
+  
   .heroLogo {
     
     visibility: hidden;

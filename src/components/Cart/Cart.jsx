@@ -15,22 +15,16 @@ const Cart = ({
 }) => {
   const classes = useStyles();
 
+  
+
   const checkedOutGoogle = () => {
     ReactGA.event({
       category: "checkout",
       action: "Checkout clicked",
     });
   };
-  const removedGoogle = () => {
-    ReactGA.event({
-      category: "removed all from cart",
-      action: "removed all clicked",
-    });
-  };
 
-
-
-  const EmptyCart = () => <EmptyCartPage />;
+  const EmptyCart = () => <EmptyCartPage cart={cart}/>;
 
   const { user, loginWithRedirect } = useAuth0();
 
@@ -99,9 +93,9 @@ const Cart = ({
   return (
     <Container>
       <div className={classes.toolbar} />
-      <Typography className={classes.tite} variant="h3" gutterBottom>
+      {!cart.line_items.length ? <div></div> : <Typography className={classes.tite} variant="h3" gutterBottom>
         Your Shopping Cart
-      </Typography>
+      </Typography>}
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
     </Container>
   );
