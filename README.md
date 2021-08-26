@@ -6,6 +6,7 @@ Allow people to view art work in their space before buying.
 ## Technologies used
 
  - Stripe
+ - [Commerce.js](https://commercejs.com/)
  - Model-Viewer
  - ReactJs
  - Material UI
